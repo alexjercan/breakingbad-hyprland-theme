@@ -4,6 +4,7 @@ desc = "Glass Grade Hyprland Theme"
 version = "0.1.0"
 author = "alexjercan"
 git = "github.com/alexjercan/breakingbad-hyprland-theme"
+depends = ["waybar", "swaybg"]
 config = "theme.conf"
 
 [kill]

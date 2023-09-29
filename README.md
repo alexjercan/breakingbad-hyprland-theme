@@ -1,6 +1,7 @@
 # Breaking Bad Hyprland Theme
 
 >> Glass Grade Theme!
+
 >> 99.1% Pure Rice!
 
 ![Breaking Bad](https://raw.githubusercontent.com/alexjercan/hyprland.dotfiles/master/.resources/neofetch.png)

@@ -1,0 +1,24 @@
+#!/usr/bin/bash
+
+THEME_DIR=$1
+
+swaybg -m fill -i $THEME_DIR/wallpaper/breakingbad.jpg
+
+killall dunst
+dunst -config $THEME_DIR/dunst/dunstrc &
+
+# TODO: You still have to refresh kitty
+mkdir -p ~/.config/kitty/themes
+cp $THEME_DIR/BreakingBad.conf ~/.config/kitty/themes/
+kitty +kitten themes "Breaking Bad"
+
+# TODO: How to actually set the rofi theme?
+mkdir -p ~/.config/rofi/themes
+cp $THEME_DIR/rofi/breaking-bad.rasi ~/.config/rofi/themes/
+
+# TODO: How to set the swaylock config?
+
+waybar -c $THEME_DIR/waybar/config.jsonc -s $THEME_DIR/waybar/style.css &
+
+# TODO: How to set the wlogout config?
+

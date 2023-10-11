@@ -24,6 +24,8 @@ unlink ~/.config/swaylock 2> /dev/null || rm -rf ~/.config/swaylock/
 cp -r $THEME_DIR/swaylock ~/.config/swaylock
 
 # Set the waybar theme to breaking bad
+ln -s $THEME_DIR/waybar/wttr-in.py ~/.local/bin/wttr-in.py
+ln -s $THEME_DIR/waybar/todo-tui.py ~/.local/bin/todo-tui.py
 waybar -c $THEME_DIR/waybar/config.jsonc -s $THEME_DIR/waybar/style.css &
 
 # Set the wlogout theme to breaking bad

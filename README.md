@@ -39,3 +39,4 @@ it will probably just skip them since it is a bash script)
 ## Future Plans
 
 - [ ] include an install script with all the apps
+- [ ] maybe also a GTK theme <https://github.com/alexjercan/breaking-bad-gtk>

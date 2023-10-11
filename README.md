@@ -12,5 +12,5 @@ TODO. For now check <https://github.com/hyprland-community/hyprtheme>
 
 ### dotfiles
 
-For the complete experience checkout
+For the complete experience check out
 <https://github.com/alexjercan/hyprland.dotfiles>.

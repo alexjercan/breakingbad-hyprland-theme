@@ -3,7 +3,7 @@
 THEME_DIR=$1
 
 # Set the breaking bad wallpaper
-swaybg -m fill -i $THEME_DIR/wallpaper/breakingbad.jpg
+swaybg -m fill -i $THEME_DIR/wallpaper/breakingbad.jpg &
 
 # Enable the dunst notification daemon with the breaking bad theme
 killall dunst

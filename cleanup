@@ -1,1 +1,26 @@
 #!/usr/bin/bash
+
+# Stop swaybg
+killall swaybg
+
+# Stop dunst
+killall dunst
+
+# Stop autoname
+killall hyprland-autoname-workspaces
+
+# Remove the kitty config
+rm -rf ~/.config/kitty
+kill -SIGUSR1 $(pgrep kitty)
+
+# Remove the rofi config
+rm -rf ~/.config/rofi
+
+# Remove the swaylock
+rm -rf ~/.config/swaylock
+
+# Stop the waybar
+killall waybar
+
+# Remove the wlogout config
+rm -rf ~/.config/wlogout

@@ -7,7 +7,7 @@ killall swaybg
 killall dunst
 
 # Stop autoname
-killall hyprland-autoname-workspaces
+kill -9 $(pgrep -f hyprland-autoname-workspaces)
 
 # Remove the kitty config
 rm -rf ~/.config/kitty

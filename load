@@ -10,7 +10,7 @@ killall dunst
 dunst -config $THEME_DIR/dunst/dunstrc &
 
 # Set up autoname
-killall hyprland-autoname-workspaces
+kill -9 $(pgrep -f hyprland-autoname-workspaces)
 hyprland-autoname-workspaces -c $THEME_DIR/hyprland-autoname-workspaces/config.toml &
 
 # Set the kitty terminal theme to breaking bad

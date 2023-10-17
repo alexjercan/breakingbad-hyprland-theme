@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+
+#### Check for yay ####
+ISYAY=/sbin/yay
+if [ -f "$ISYAY" ]; then
+    echo -e "$COK - yay was located, moving on."
+    yay -Suy
+else
+    echo -e "$CER - Yay is required for this script, now exiting"
+    exit
+fi
+
+yay -S --noconfirm \
+    reversal-icon-theme-git
+
+mkdir -p ~/.themes
+git clone https://github.com/alexjercan/breakingbad-hyprland-theme.git ~/.themes/breaking-bad-gtk
+
+echo -e "Installed BreakingBad Theme.\n"

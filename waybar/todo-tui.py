@@ -6,7 +6,7 @@ import subprocess
 
 try:
     status = subprocess.run(
-        ["todo-hs", "status"],
+        ["todo-tui", "status"],
         stdout=subprocess.PIPE,
         stderr=subprocess.PIPE,
         universal_newlines=True,
@@ -14,7 +14,7 @@ try:
         check=True
     )
     details = subprocess.run(
-        ["todo-hs", "details"],
+        ["todo-tui", "details"],
         stdout=subprocess.PIPE,
         stderr=subprocess.PIPE,
         universal_newlines=True,

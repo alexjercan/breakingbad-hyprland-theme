@@ -16,6 +16,6 @@ yay -S --noconfirm \
     reversal-icon-theme-git
 
 mkdir -p ~/.themes
-git clone https://github.com/alexjercan/breakingbad-hyprland-theme.git ~/.themes/breaking-bad-gtk
+git clone https://github.com/alexjercan/breaking-bad-gtk.git ~/.themes/BreakingBad
 
 echo -e "Installed BreakingBad Theme.\n"

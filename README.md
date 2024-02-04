@@ -18,8 +18,8 @@ For now check <https://github.com/hyprland-community/hyprtheme>
 ```console
 mkdir -p ~/.config/hypr/themes
 cd ~/.config/hypr/themes
-git clone git@github.com:alexjercan/breakingbad-hyprland-theme.git
-hyprtheme apply breakingbad-hyprland-theme
+git clone git@github.com:alexjercan/breakingbad-hyprland-theme.git breakingbad
+hyprtheme apply breakingbad
 ```
 
 ## Dependencies

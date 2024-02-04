@@ -3,6 +3,7 @@
 THEME_DIR=$1
 
 # Set the breaking bad wallpaper
+killall swaybg
 swaybg -m fill -i $THEME_DIR/wallpaper/breakingbad.jpg &
 
 # Enable the dunst notification daemon with the breaking bad theme
@@ -28,6 +29,7 @@ unlink ~/.config/swaylock 2> /dev/null || rm -rf ~/.config/swaylock/
 cp -r $THEME_DIR/swaylock ~/.config/swaylock
 
 # Set the waybar theme to breaking bad
+killall waybar
 waybar -c $THEME_DIR/waybar/config.jsonc -s $THEME_DIR/waybar/style.css &
 
 # Set the wlogout theme to breaking bad

@@ -112,7 +112,7 @@ def daily_json():
     return {
         "format": " {}",
         "interval": 60,
-        "exec": "daily.sh",
+        "exec": "waybar_daily.sh",
         "tooltip": True,
         "tooltip-format": "{}",
         "return-type": "json"
